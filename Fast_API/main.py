@@ -6,13 +6,14 @@ from scipy.spatial import distance
 import ast
 import openai
 from transformers import GPT2TokenizerFast
+from decouple import config
 
 # Initialize FastAPI app
 app = FastAPI()
 
 # Define the GPT-3 model and other parameters
 GPT_MODEL = "gpt-3.5-turbo"
-api_key = "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"  # Replace with your actual OpenAI API key
+api_key = config('API_KEY')  # Replace with your actual OpenAI API key
 openai.api_key = api_key
 
 # Load the CSV file with embeddings
