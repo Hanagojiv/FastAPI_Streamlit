@@ -17,7 +17,7 @@ api_key = config('API_KEY')  # Replace with your actual OpenAI API key
 openai.api_key = api_key
 
 # Load the CSV file with embeddings
-embeddings_file_path = '/Users/vivekhanagoji/Documents/BigDataAssignment02/Streamlit_FastAPI/FastAPI/pdf_data.csv'  # Update with the path to your CSV file
+embeddings_file_path = '/Users/vivekhanagoji/Documents/BigDataAssignment02/Streamlit_FastAPI/Fast_API/pdf_data.csv'  # Update with the path to your CSV file
 df = pd.read_csv(embeddings_file_path)
 
 # Convert the embeddings from string to list
